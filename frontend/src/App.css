@@ -1,0 +1,314 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+body {
+  background-size: cover;
+  background-attachment:  fixed;
+  background: black;
+  background-image: url("./img/fondo.jpg");
+}
+
+
+
+.holder {
+  max-width: 1080px;
+  margin: 0 auto;
+  
+}
+
+ 
+
+
+.informacion{
+  margin-top: 100px;
+  
+}
+
+.informacion .titulo span{
+  font-weight: 500;
+  font-size: 40px;
+  
+}
+
+.informacion .titulo{
+  font-size: 30px;
+}
+
+.titulo2{
+  font-weight: 700;
+  font-size: 70px;
+  margin-top: 10px;
+}
+
+.subtitulo{
+  font-weight: 300;
+  font-size: 40px;
+  margin-top: 20px;
+  color: #e03a5d;
+}
+
+.descripcion{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.botongaleria{
+  background: #e03a5d;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  margin-top:50px ;
+  cursor: pointer;
+}
+
+.fotoprincipal img{
+  width: 500px;
+  position: absolute;
+  right: 150px;
+  top: 120px;
+}
+
+.titulogaleria,
+.tituloservicios{
+  font-size: 40px;
+  margin-top: 250px;
+}
+
+.titulogaleria span,
+.tituloservicios span{
+  font-weight: 700;
+}
+
+.lineadiv{
+  background: #fff;
+  height:2px ;
+  width: 500px;
+}
+
+.subtitulogaleria,
+.subtituloservicios{
+  margin: 20px 0 50px 0;
+}
+
+
+.servicios{
+  float: left;
+  margin-top: 50px;
+}
+
+
+.contenido{
+  display: flex;
+
+}
+.caja{
+  
+  margin:5px;
+  overflow: hidden;
+  height: 400px;
+  line-height: 35px;
+  border-radius: 20px;
+  transition: 0.5s;}
+
+.caja:hover{
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+
+.titulocaja{
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.parrafocaja{
+  padding: 10px;
+  font-weight: 500;
+}
+
+.lineacaja{
+  background: gray;
+  height: 2px;
+  margin: 0 10px 0 10px;
+
+}
+
+.parrafo2caja{
+  font-weight: 300;
+  padding: 10px;
+}
+
+.botoncaja{
+  padding: 10px;
+  margin-top: 40px;
+  background: #e03a5d;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+
+.container{
+  position: relative;
+  width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.box{
+  margin-top: 100px;
+}
+
+
+.container .box{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.container .box:hover{
+  z-index: 1;
+  transform: scale(1.25);
+  
+}
+
+.container .box .imgbx:before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg,#c8c8c8,#1f1d1d);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .box:hover .imgbx:before{
+  opacity: 1;
+}
+
+
+.container .box .imgbx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100% ;
+  height: 100%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.container .box .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:2 ;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.container .box .content h2{
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 20px;
+  transform: translateY(200px);
+  
+
+}
+
+.container .box:hover .content h2{
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.container .box .content p{
+  color: #fff;
+  transform: translateY(200px);
+  transition: 0.5s;
+  font-size: 10px;
+  width: 100%;
+  position: absolute;
+}
+
+.container .box:hover .content p{
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.galeria{
+  margin-top: 1000px;
+}
+
+
+
+
+
+.fotoacercade img{
+  width: 500px;
+  border-radius: 50px;
+}
+
+.texto{
+  width: 500px;
+  float: right;
+  line-height: 30px;
+}
+
+.intro{
+  font-weight: 700;
+}
+
+
+
+
+.containercontacto{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  color: black;
+
+}
+
+.containercontacto input{
+  color: black;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+}
